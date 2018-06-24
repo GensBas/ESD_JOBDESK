@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="">
+  <head>
+
+  	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-cyan.min.css" /> 
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESD job desk</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+  </head>
+  <body>
+
+
+
+    
+
+    <div>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs"><h1>ESDFFFFFFFFFFFFFFFF</h1>
+  <header class="mdl-layout__header">
+
+
+  	<div class="mdl-grid">
+  		<div class="mdl-cell mdl-cell--6-col"></div>
+  		<div class="mdl-cell mdl-cell--3-col">
+
+        <button id="show-dialog" type="button" class="mdl-button">Log in</button>
+	  		<!-- log in -->
+          <dialog class="mdl-dialog">
+  	   		  <h4 class="mdl-dialog__title">Here is the Form</h4>
+  	   			 <form >
+    	   			<br>
+      	   			<a class="close">X</a>
+      		    	<p>login :</p>
+      		    	<input type="text" name="login">
+    		    	<br>
+      		    	<p>password :</p>
+      		    	<input type="password" name="password">
+    		    	<br>
+    		    	<br>
+                <input type="submit" name="send" value="Send">	
+  				  </form>
+  			  </dialog>
+      </div>
+
+
+  	<div class="mdl-cell mdl-cell--3-col"> 	
+  		<div class="mdl-card__actions mdl-card--border">
+    			<button id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--white">
+    			<i class="material-icons">account_circle</i>Sign-in with Google
+    			</button>
+			</div>
+
+		</div>
+
+
+    
+<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+
+
+	 	
+
+
+	 
+	</div>
+
+    <div class="mdl-layout__header-row">
+
+
+      <!-- Title -->
+      <h1 class="mdl-layout-title">ESD Job Deskkkk</h1>
+
+	<script>
+	    var dialog = document.querySelector('dialog');
+	    var showDialogButton = document.querySelector('#show-dialog');
+	    if (! dialog.showModal) {
+	      dialogPolyfill.registerDialog(dialog);
+	    }
+	    showDialogButton.addEventListener('click', function() {
+	      dialog.showModal();
+	    });
+	    dialog.querySelector('.close').addEventListener('click', function() {
+	      dialog.close();
+	    });
+  	</script>
+    </div>
+
+
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Profile</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Jobs</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Candidats</a>
+    </div>
+
+  </header>
+  
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+  </div>
+
+
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+      <div class="page-content"><!-- Your content goes here -->
+      	
+      
+	<button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Toast</button>
+	
+
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </section>
+  </main>
+</div>
+
+    </div>
+
+
+ <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
+<div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA0377QPhKKsmqh5z150J3UjykNzucag_k",
+    authDomain: "esdf-6f53e.firebaseapp.com",
+    databaseURL: "https://esdf-6f53e.firebaseio.com",
+    projectId: "esdf-6f53e",
+    storageBucket: "esdf-6f53e.appspot.com",
+    messagingSenderId: "433164943619"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+
+ 
+
+</html>
